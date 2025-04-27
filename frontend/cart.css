@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightcyan;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cart-container {
+    width: 80%;
+    margin: 30px auto;
+    background-color:lightgrey;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Cart item styling */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item span {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Remove Button Styling */
+.remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    max-width: 25%;
+    min-width: 80px;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Total price styling */
+.total-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: right;
+    color: #333;
+}
+
+/* Back to menu button styling */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Styling for empty cart message */
+.empty-cart-message {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item span {
+        margin-bottom: 10px;
+    }
+
+    .remove-btn {
+        width: 100%;
+        max-width: none;
+        margin-top: 10px;
+    }
+
+    .total-price {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 14px 18px;
+    }
+}
