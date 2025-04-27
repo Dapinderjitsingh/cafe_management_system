@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Reservation - Bites and Brews Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newreservationtable.css">
+  <script src="newreservationtable.js"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Bites and Brews Cafe</a>
+        </div>
+        <div class="nav-links">
+            <a href="./newhomepage.html">Home</a>
+            <a href="./newmenu.html">Menu</a>
+            <a href="./chef.html">Chef</a>
+            <a href="./aboutus.html">About</a>
+            <a href="./contactus.html">Contact</a>
+        </div>
+    </div>
+    <div class="reservation-section">
+        <h2>Book Your Table</h2>
+        <p>Fill out the form below to reserve a table at Bites and Brews Cafe.</p>
+        <form id="reservationForm" class="reservation-form">
+            <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number (10 digits)" required maxlength="10" oninput="validatePhoneNumber()">
+            <input type="date" name="date" id="date" required>
+            <input type="time" name="time" id="time" required>
+            <input type="number" name="people" id="people" min="1" max="30" placeholder="Number of people" required>
+            <textarea name="requests" id="requests" placeholder="Any special requests? (Optional)"></textarea>
+            <button type="./done.html">Reserve Now</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Bites and Brews Cafe | All Rights Reserved</p>
+    </div>
+</body>
+</html>
