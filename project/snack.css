@@ -1,0 +1,99 @@
+body{
+    background-color:rgb(204, 175, 142);
+    background-image: url(./cafe.png);
+    }
+    .navbar {
+      background-color: burlywood;
+      overflow: hidden;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: #232121;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .button button {
+      background-color: rgb(151, 183, 243); /* Green background */
+      color: white;
+      border: none;
+      padding: 10px 20px; /* You can still adjust padding for internal spacing */
+      width: 150px; /* Set width */
+      height: 40px; /* Set height */
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 5px;
+      float: right;
+    }
+    
+    .button button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: rgb(9, 9, 9);
+    }
+    h1{
+       text-align :center;
+       color:rgb(235, 227, 227);
+    }
+    .sub-boxes {
+        width: 1450px;
+        height: 300px;
+        margin: 25px;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 20px;
+      }
+      .quantity {
+        display: flex;
+        align-items: center;
+    }
+    
+    .minus-btn, .plus-btn {
+        width: 30px;  /* Adjust this value as needed */
+        height: 30px; /* Adjust this value as needed */
+        font-size: 18px;
+        line-height: 30px;
+        border: 1px solid #ccc;
+        background-color: #f4f4f4;
+        cursor: pointer;
+    }
+    
+    .qty-input {
+        width: 40px;  /* Adjust this value as needed */
+        height: 30px; /* Adjust this value as needed */
+        text-align: center;
+        border: 1px solid #ccc;
+        margin: 0 5px;
+    }
+      
+      .sub-box {
+        background-color:bisque;
+        padding: 20px;
+        margin: 5px;
+        border: 2px solid #1c1313;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Responsive design */
+      
+      /* Mobile screens (max-width: 768px) */
+      @media only screen and (max-width: 768px) {
+        .sub-boxes {
+          grid-template-columns: 25fr;
+        }
+      }
+      
+      /* Tablet screens (min-width: 769px) and (max-width: 1024px) */
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        .sub-boxes {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      h2{
+        color:azure;
+        font-size: 40px;
+      }
