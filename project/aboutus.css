@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+header {
+    background-color: #6c4f3d; /* Dark brown */
+    color: white;
+    text-align: center;
+    padding: 20px 20px; /* Reduced padding for smaller header */
+    position: relative;
+}
+
+/* Back Button Styles */
+header a.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #6c4f3d;
+    color: white;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header a.back-button:hover {
+    background-color: #4e3a28;
+}
+
+header h1 {
+    font-size: 2.5em; /* Smaller title font size */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px; /* Reduced margin for more compact look */
+}
+
+header p {
+    font-size: 1.1em; /* Slightly smaller subtitle */
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+}
+
+section {
+    padding: 40px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #6c4f3d; /* Dark brown */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+ul {
+    color: #555;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.team-section {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Smaller title for smaller screens */
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .team-member {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
