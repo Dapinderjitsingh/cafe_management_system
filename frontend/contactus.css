@@ -1,0 +1,226 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+header {
+    margin-bottom: 0;
+    /* Remove bottom margin to avoid space below the header */
+    padding-bottom: 0;
+    /* Remove any bottom padding */
+}
+
+.section.button {
+    margin-top: 0;
+    /* Remove any margin above the button section */
+    padding-top: 0;
+    /* Remove any padding above the button section */
+}
+
+.navbar {
+    background-color: burlywood;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #232121;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: rgb(250, 238, 238);
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(245, 241, 241);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: orange;
+}
+
+.contact-section {
+    background-color: lightgrey;
+    flex-grow: 1;
+    padding: 2rem 0;
+    /* margin-top: 2px;  */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 250px;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.navbar {
+    background-color: burlywood;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #232121;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #e55656;
+}
+
+.button button {
+    background-color: rgb(151, 183, 243);
+    /* Green background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    /* You can still adjust padding for internal spacing */
+    width: 150px;
+    /* Set width */
+    height: 40px;
+    /* Set height */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 2px;
+    float: right;
+}
+
+.button button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: rgb(9, 9, 9);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}

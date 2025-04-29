@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bites and Brews Cafe - Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+    <script src="contactus.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./newhomepage.html">Home</a>
+        <a href="./newmenu.html">Menu</a>
+        <a href="./chef.html">Chef</a>
+        <a href="./aboutus.html">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <section class="button">
+        <a href="./newmenu.html">
+            <button>Back</button>
+        </a>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us using the form below or use the
+                contact details provided:</p>
+
+            <div class="contact-layout">
+                <!-- Contact Info Section (left) -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Name:</strong> Bites and Brews Cafe</p>
+                    <p><strong>Address:</strong> 123 Brew Street, Coffee Town, CT 56789</p>
+                    <p><strong>Email:</strong> contact@btesandbrews.com</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                </div>
+
+                <!-- Contact Form Section (right) -->
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Full Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Your Email Address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" name="phone-number" required placeholder="Phone Number"
+                                maxlength="10" oninput="restrictPhoneInput(event)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Btes and Brews Cafe | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
