@@ -1,0 +1,122 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Page Background */
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Background Styling */
+  .background {
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Container Styling */
+  .container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 550px;
+    animation: zoomIn 0.6s ease;
+  }
+  
+  /* Zoom Animation */
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Form Title */
+  .feedback-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  /* Separator Under Title */
+  .separator {
+    height: 3px;
+    width: 60px;
+    background: #f76c6c;
+    margin: 10px auto 30px;
+    border-radius: 5px;
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  /* Input and Select Styling */
+  .feedback-form input,
+  .feedback-form select,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+    font-size: 15px;
+  }
+  
+  .feedback-form input:focus,
+  .feedback-form select:focus,
+  .feedback-form textarea:focus {
+    border-color: #f76c6c;
+    background-color: #fff;
+  }
+  
+  /* Submit Button Styling */
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #f76c6c;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+  }
+  
+  .submit-btn:hover {
+    background: #f43b47;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      padding: 25px;
+    }
+  }
