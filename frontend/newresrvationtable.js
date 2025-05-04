@@ -16,6 +16,7 @@ reservationForm.addEventListener("submit", function(event) {
     const phone = document.getElementById("phone").value;
     const date = document.getElementById("date").value;
     const time = document.getElementById("time").value;
+    
     const people = document.getElementById("people").value;
     const requests = document.getElementById("requests").value;
 
