@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Tracking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+</head>
+<body>
+
+  <div class="tracker-container">
+    <h1>Track Your Order</h1>
+
+    <div class="progress-bar">
+      <div class="progress-line"></div>
+      <div class="progress-fill" id="progress-fill"></div>
+
+      <div class="progress-step" id="step-0">
+        <div class="progress-label">Preparing</div>
+      </div>
+      <div class="progress-step" id="step-1">
+        <div class="progress-label">Ready</div>
+      </div>
+      <div class="progress-step" id="step-2">
+        <div class="progress-label">Delivered</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button onclick="nextStep()">Next Step</button>
+      <button onclick="resetStatus()">Reset</button>
+    </div>
+
+    <p class="done-message" id="done-message">Your order has been delivered! 🎉</p>
+  </div>
+</body>
+</html>
