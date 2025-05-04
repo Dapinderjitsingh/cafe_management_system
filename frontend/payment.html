@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Payment Page</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Restaurant Payment</h1>
+        <form id="payment-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="total">Total Amount</label>
+            <input type="text" id="total" name="total" value="$50.00" readonly>
+
+            <label for="payment-method">Select Payment Method</label>
+            <select id="payment-method" name="payment-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="google-pay">Google Pay</option>
+                <option value="apple-pay">Apple Pay</option>
+                <option value="cash-on-delivery">Cash on Delivery</option>
+            </select>
+
+            <div id="credit-card-info" class="payment-option">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="xxxx-xxxx-xxxx-xxxx">
+
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV">
+            </div>
+
+            <div id="paypal-info" class="payment-option">
+                <p>Proceed with PayPal</p>
+            </div>
+
+            <div id="google-pay-info" class="payment-option">
+                <p>Proceed with Google Pay</p>
+                 Google Pay Button will appear here -->
+                <!-- <div id="google-pay-button"></div>
+            </div>
+
+            <div id="apple-pay-info" class="payment-option">
+                <p>Proceed with Apple Pay</p>
+                Apple Pay Button will appear here
+                <div id="apple-pay-button"></div>
+            </div>
+
+            <div id="cash-info" class="payment-option">
+                <p>Pay upon delivery</p>
+            </div>
+
+            <button type="submit">Complete Payment</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://pay.google.com/gp/p/js/pay.js" async></script>
+</body>
+</html>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Credit Card Details</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="payment.js"></script>
+</head>
+
+<body>
+    <div class="payment-container">
+        <h1>Enter Credit Card Details</h1>
+        
+        <!-- Payment Form -->
+        <form id="payment-form">
+            <div class="input-field">
+                <label for="cardholder-name">Cardholder Name</label>
+                <input type="text" id="cardholder-name" required />
+            </div>
+
+            <div class="input-field">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" required maxlength="16" placeholder="1234 5678 9012 3456" />
+            </div>
+
+            <div class="input-field">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="month" id="expiry-date" required />
+            </div>
+
+            <div class="input-field">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" required maxlength="3" placeholder="123" />
+            </div>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+
+        <button onclick="window.location.href='cart.html'">Back to Cart</button>
+    </div>
+</body>
+
+</html>
