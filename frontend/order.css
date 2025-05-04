@@ -33,6 +33,10 @@ body {
     text-align: center;
   }
 
+
+
+
+
   .progress-step::before {
     content: '';
     position: absolute;
