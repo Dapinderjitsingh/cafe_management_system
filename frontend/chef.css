@@ -1,0 +1,155 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #6c4f3d;
+    color: white;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+}
+
+/* Back Button Styles in Header */
+header a.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #6c4f3d;
+    color: white;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header a.back-button:hover {
+    background-color: #4e3a28;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+/* Chef Section */
+.chef-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px 20px;
+    margin-top: 80px;
+}
+
+.chef-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #6c4f3d;
+    margin-bottom: 40px;
+}
+
+.chef-profiles {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.chef-profile {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.chef-profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.chef-profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.chef-profile h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.chef-profile p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.chef-profile ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.chef-profile ul li {
+    color: #6c4f3d;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .chef-profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chef-profile {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .chef-profile h3 {
+        font-size: 1.8em;
+    }
+
+    .chef-profile p {
+        font-size: 1em;
+    }
+}
